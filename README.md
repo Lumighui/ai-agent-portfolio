@@ -17,6 +17,17 @@ npm run build
 
 构建结果输出到 `dist/`。
 
+## GitHub Pages
+
+生产分支：main`r
+
+构建命令：
+pm run build`r
+
+输出目录：dist`r
+
+项目网址：https://lumighui.github.io/ai-agent-portfolio/
+
 ## Cloudflare Pages 设置
 
 - Framework preset：Vite
