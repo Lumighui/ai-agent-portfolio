@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import MlpLab from './MlpLab.jsx'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -89,6 +90,7 @@ function Header() {
         <a href="#about">概览</a>
         <a href="#agents">Agent 档案</a>
         <a href="#outcomes">成果</a>
+        <a href="#mlp-lab">MLP Lab</a>
       </nav>
       <a className="contact-link" href="mailto:hello@example.com">
         联系我 <Arrow diagonal />
@@ -116,13 +118,13 @@ function Hero() {
         <p className="hero-reveal">记录我如何使用 AI Agent 完成研究、设计、工具开发与生活规划——<br className="wide-only" />从提问开始，以可交付的结果结束。</p>
         <div className="hero-actions hero-reveal">
           <a className="primary-btn magnetic" href="#agents">查看使用档案 <Arrow /></a>
-          <a className="text-btn" href="#outcomes">浏览成果 <Arrow diagonal /></a>
+          <a className="text-btn" href="#mlp-lab">进入 MLP 实验室 <Arrow diagonal /></a>
         </div>
       </div>
       <div className="hero-meta hero-reveal">
         <span>SCROLL TO EXPLORE</span>
         <div className="scroll-line" />
-        <span>2 AGENTS · 6 PRACTICES</span>
+        <span>2 PARTS · 6 PRACTICES</span>
       </div>
       <div className="hero-orbit" aria-hidden="true"><span /></div>
       <div className="hero-index" aria-hidden="true">01</div>
@@ -141,7 +143,7 @@ function SectionTitle({ children, className = '' }) {
 function Intro() {
   return (
     <section className="intro section" id="about">
-      <div className="section-kicker reveal-item"><span>01</span> ABOUT THE PRACTICE</div>
+      <div className="section-kicker reveal-item"><span>01</span> PART 01 / ABOUT THE PRACTICE</div>
       <div className="intro-grid">
         <SectionTitle>不是替代思考，<br />而是放大<span>行动半径。</span></SectionTitle>
         <div className="intro-copy">
@@ -466,6 +468,7 @@ export default function App() {
       <Intro />
       <Agents />
       <Outcomes />
+      <MlpLab />
       <Footer />
     </main>
   )

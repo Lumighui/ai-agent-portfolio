@@ -1,6 +1,9 @@
 # 卢朝鑫｜个人 AI Agent 使用档案
 
-React + Vite + GSAP 个人网站，展示 Codex 与豆包的真实使用情况和成果。
+React + Vite + GSAP 个人网站，包含两个部分：
+
+1. AI Agent 使用档案：展示 Codex 与豆包的真实使用情况和成果。
+2. MLP Flight Lab：用可交互的七站航线演示多层感知机的前向传播。
 
 ## 本地开发
 
